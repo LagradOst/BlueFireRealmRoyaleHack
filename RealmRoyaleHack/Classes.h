@@ -87,7 +87,7 @@ public:
 		return read<FString>(data + PLAYER_NAME);
 	}
 	bool IsBot() {
-		return read<int>(data + 0x02BC) >> 6 & 1;
+		return read<int>(data + IS_BOT) >> 6 & 1;
 	}
 
 	uint64_t data;

@@ -53,3 +53,5 @@ constexpr auto WORLD_GRAVITY_Z = 0x058C; // worldInfo -> float
 
 constexpr auto ACCURACY= 0x944; // ATgDevice -> FAccuracySettings
 constexpr auto RECOIL = 0x9E4; // ATgDevice -> FRecoilSettings
+
+constexpr auto IS_BOT = 0x02BC; // APlayerReplicationInfo -> int >> 6 & 1
