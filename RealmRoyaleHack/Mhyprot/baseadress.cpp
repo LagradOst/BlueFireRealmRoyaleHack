@@ -122,6 +122,12 @@ void FixOffsets() {
 	//https://www.vergiliusproject.com/kernels/x64/Windows%2010%20|%202016/2009%2020H2%20(October%202020%20Update)/_EPROCESS
 	switch(build) // some offsets might be wrong, check it yourself it if does not work
 	{
+	case 22000: //WIN11
+		EPImageFileName = 0x5a8;
+		EPUniqueProcessId = 0x440;
+		EPSectionBaseAddress = 0x520;
+		EPActiveProcessLinks = 0x448;
+		break;
 	case 19043: //WIN10_21H1
 		EPImageFileName = 0x5a8;
 		EPUniqueProcessId = 0x440;
